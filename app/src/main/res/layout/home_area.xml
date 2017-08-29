@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView android:layout_width="60px"
+            android:layout_height="60px"
+            android:scaleType="fitXY"
+            android:id="@+id/areaIcon"
+            android:layout_margin="20px"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="精彩推荐"
+            android:textSize="12sp"
+            android:layout_gravity="center_vertical"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/areaRecyclerView"></android.support.v7.widget.RecyclerView>
+</com.zhy.autolayout.AutoLinearLayout>
